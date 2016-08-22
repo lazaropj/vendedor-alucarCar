@@ -1,0 +1,19 @@
+<ion-view view-title="Lista de Fornecedores">
+  <ion-content class="padding">
+    <div class="card" ng-repeat="fornecedor in listaDeFornecedores">
+      <div class="item item-divider">
+        {{fornecedor.nome}}
+      </div>
+      <div class="item item-text-wrap">
+        <h3>
+            Telefone Comercial: {{fornecedor.telefoneComercial}}
+        </h3>
+        <h5>
+          Telefone Celular: {{fornecedor.telefoneCelular}}
+        </h5>
+
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

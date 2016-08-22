@@ -1,0 +1,16 @@
+<ion-view view-title="Agendamentos Marcados">
+  <ion-content class="padding">
+    <div class="card" ng-repeat="pedido in listaDePedidos">
+      <div class="item item-divider">
+        {{pedido.nome}}
+      </div>
+      <div class="item item-text-wrap">
+        Modelo: {{pedido.carro.nome}}
+      </div>
+      <div class="item item-divider">
+        Data Agendamento: {{pedido.dataAgengamento}}
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
